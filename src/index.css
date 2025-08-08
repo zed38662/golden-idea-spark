@@ -2,41 +2,81 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Cosmic Golden Treasure Box Design System */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Cosmic Background Colors */
+    --background: 230 35% 7%;
+    --foreground: 60 30% 96%;
+    
+    /* Deep Space Colors */
+    --cosmic-deep: 245 50% 12%;
+    --cosmic-mid: 250 45% 20%;
+    --cosmic-light: 255 40% 30%;
+    
+    /* Golden Treasure Colors */
+    --gold-rich: 45 85% 55%;
+    --gold-bright: 50 90% 65%;
+    --gold-light: 55 95% 75%;
+    --gold-glow: 50 100% 80%;
+    
+    /* Magical Effects */
+    --particle-white: 60 100% 98%;
+    --particle-gold: 50 100% 85%;
+    --energy-blue: 220 100% 70%;
+    --energy-purple: 280 100% 75%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 245 50% 12%;
+    --card-foreground: 60 30% 96%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 245 50% 12%;
+    --popover-foreground: 60 30% 96%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 45 85% 55%;
+    --primary-foreground: 245 50% 12%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 250 45% 20%;
+    --secondary-foreground: 60 30% 96%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 250 45% 20%;
+    --muted-foreground: 60 15% 70%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 50 90% 65%;
+    --accent-foreground: 245 50% 12%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 60 30% 96%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 250 30% 25%;
+    --input: 250 30% 25%;
+    --ring: 50 90% 65%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+    
+    /* Cosmic Gradients */
+    --gradient-cosmic: linear-gradient(135deg, hsl(var(--cosmic-deep)), hsl(var(--cosmic-mid)), hsl(var(--cosmic-light)));
+    --gradient-nebula: radial-gradient(ellipse at center, hsl(var(--energy-purple) / 0.3), hsl(var(--energy-blue) / 0.2), transparent);
+    --gradient-golden: linear-gradient(145deg, hsl(var(--gold-rich)), hsl(var(--gold-bright)), hsl(var(--gold-light)));
+    --gradient-treasure: linear-gradient(45deg, hsl(var(--gold-rich)), hsl(var(--gold-glow)), hsl(var(--gold-bright)));
+    
+    /* Magical Glows */
+    --glow-golden: 0 0 20px hsl(var(--gold-glow) / 0.5), 0 0 40px hsl(var(--gold-glow) / 0.3);
+    --glow-particle: 0 0 10px hsl(var(--particle-white)), 0 0 20px hsl(var(--particle-gold) / 0.7);
+    --glow-energy: 0 0 15px hsl(var(--energy-blue) / 0.6), 0 0 30px hsl(var(--energy-purple) / 0.4);
+    
+    /* Animation Timings */
+    --duration-fast: 0.3s;
+    --duration-medium: 0.6s;
+    --duration-slow: 1.2s;
+    --duration-reveal: 2.5s;
+    
+    /* Easing Functions */
+    --ease-magical: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+    --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
