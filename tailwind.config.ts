@@ -148,13 +148,13 @@ export default {
 				'nebula-drift': 'nebula-drift 20s linear infinite',
 				// Treasure Box Animations
 				'treasure-pulse': 'treasure-pulse 2s ease-in-out infinite',
-				'treasure-bounce': 'treasure-bounce 1s var(--ease-bounce)',
-				'box-open': 'box-open 0.5s var(--ease-magical) forwards',
+				'treasure-bounce': 'treasure-bounce 1s cubic-bezier(0.68, -0.55, 0.265, 1.55)',
+				'box-open': 'box-open 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards',
 				// Particle Animations
 				'particle-rise': 'particle-rise 2s ease-out infinite',
 				'particle-explosion': 'particle-explosion 1s ease-out forwards',
 				// Text Animations
-				'idea-emerge': 'idea-emerge 1.5s var(--ease-magical) forwards',
+				'idea-emerge': 'idea-emerge 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards',
 				'text-glow-pulse': 'text-glow-pulse 2s ease-in-out infinite',
 				// Button Animations
 				'button-glow': 'button-glow 2s ease-in-out infinite'
