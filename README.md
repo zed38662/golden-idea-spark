@@ -38,7 +38,7 @@ For Software:
 [https://golden-idea-spark.lovable.app/]
 
 another project:https://github.com/zed38662/tinker-hub
-
+another project: https://github.com/zed38662/solo-stride-system
 ### Project Documentation
 For Software:
 
